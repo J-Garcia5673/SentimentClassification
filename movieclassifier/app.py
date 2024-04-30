@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 cur_dir = os.path.dirname(__file__)
 clf = pickle.load(open(os.path.join(cur_dir,
-                    'pkl_objects', 'classifier.pkl'),
-                    'rb'))
+                     'pkl_objects', '/Users/josegarcia/Desktop/SentimentClassification/movieclassifier/pkl_objects/classifier.pkl'),
+                     'rb'))
 db = os.path.join(cur_dir, 'reviews.sqlite')
 def classify(document):
     label = {0: 'negative', 1: 'positive'}
