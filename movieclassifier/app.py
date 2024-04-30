@@ -63,4 +63,4 @@ def feedback():
     sqlite_entry(db, review, y)
     return render_template('thanks.html')
 if __name__ == '__main__':
-       app.run(debug=True)
+       app.run(debug=False)
